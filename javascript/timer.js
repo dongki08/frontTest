@@ -4,7 +4,7 @@ let number = () => {
 };
 
 let time = 5;
-
+let time2 = 6;
 setInterval(function () {
   if (time >= 0) {
     max = Math.floor(time / 60);
