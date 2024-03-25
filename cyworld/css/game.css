@@ -95,27 +95,30 @@ body {
   height: 24px;
 }
 
-.lotoo__number {
-  background-color: rgba(255, 228, 0, 1);
+.game__lotoo__number {
   width: 130px;
   height: 21px;
+  background-color: #ffe400;
+  border-radius: 8px;
+  border: solid 1px black;
+  font-size: 10px;
+  font-weight: 700;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 5px 8px;
   align-items: center;
-  border: solid 1px black;
-  border-radius: 8px;
-  padding: 5px;
-  font-size: 10px;
-  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 11px;
 }
 
-.result {
-  align-items: center;
+.game__lotto__button {
   width: 62px;
   height: 24px;
-  border-radius: 5px;
   background-color: white;
+  border: 1px solid black;
+  align-items: center;
+  border-radius: 5px;
   font-size: 11px;
   font-weight: 700;
 }
