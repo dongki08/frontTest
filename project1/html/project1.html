@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>회원가입</title>
+    <link href="/project1/css/project1.css" rel="stylesheet" />
+    <script src="/project1/javascript/project1.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapperInner">
+        <div class="title">동현월드 회원가입</div>
+        <div class="textbox">
+          <input
+            class="email"
+            id="email"
+            type="text"
+            placeholder="이메일을 입력해 주세요."
+          />
+          <div class="error" id="error__email"></div>
+          <input
+            class="name"
+            id="name"
+            type="text"
+            placeholder="이름을 입력해 주세요."
+          />
+          <div class="error" id="error__name"></div>
+          <input
+            class="pw1"
+            id="password1"
+            type="password"
+            placeholder="비밀번호를 입력해 주세요."
+          />
+          <div class="error" id="error__password1"></div>
+          <input
+            class="pw2"
+            id="password2"
+            type="password"
+            placeholder="비밀번호를 다시 입력해 주세요."
+          />
+          <div class="error" id="error__password2"></div>
+        </div>
+        <div class="phone">
+          <input
+            type="text"
+            id="phone1"
+            onchange="changePhone1()"
+            onkeyup="onchange()"
+            maxlength="3"
+          />-
+          <input
+            type="text"
+            id="phone2"
+            onchange="changePhone2()"
+            onkeyup="onchange()"
+            maxlength="4"
+          />-
+          <input
+            type="text"
+            id="phone3"
+            onchange="changePhone3()"
+            onkeyup="onchange()"
+            maxlength="4"
+          />
+        </div>
+        <div class="number">
+          <div id="token">000000</div>
+          &nbsp;&nbsp;
+          <button
+            class="number-submit"
+            id="token__button"
+            onclick="getToken()"
+            disabled
+          >
+            인증번호 전송
+          </button>
+        </div>
+        <div class="timer">
+          <div id="token__timer">3 : 00</div>
+          &nbsp;&nbsp;
+          <button
+            class="timer-submit"
+            id="token__timer__confirm__button"
+            onclick="getTokenTimerConfirm()"
+            disabled
+          >
+            인증 완료
+          </button>
+        </div>
+        <select id="location">
+          <option selected disabled>지역을 선택하세요.</option>
+          <option>서울</option>
+          <option>인천</option>
+          <option>경기</option>
+        </select>
+        <div class="error" id="error__location"></div>
+        <div class="gender">
+          <input type="radio" id="gender__man" name="gender" />&nbsp;남성
+          &nbsp;&nbsp;<input
+            type="radio"
+            id="gender__woman"
+            name="gender"
+          />&nbsp;여성
+        </div>
+        <div class="error" id="error__gender"></div>
+        <hr />
+        <button class="submit" id="signup__button" onclick="signup()" disabled>
+          가입하기
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
